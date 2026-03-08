@@ -2,30 +2,81 @@ body{
 font-family: Arial, sans-serif;
 margin:0;
 background:#f4f6fb;
+color:#333;
 text-align:center;
 }
 
 header{
 background:#6c63ff;
 color:white;
-padding:50px;
+padding:60px 20px;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
 }
 
 section{
-margin:40px;
+max-width:1000px;
+margin:60px auto;
+padding:0 20px;
 }
 
-.project{
+h2{
+margin-bottom:30px;
+font-size:28px;
+color:#444;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+.project-card{
 background:white;
-padding:20px;
-margin:20px auto;
-width:350px;
+padding:25px;
 border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+text-align:left;
 }
 
-.project a{
+.project-card h3{
+margin-top:0;
+color:#333;
+}
+
+.project-card p{
+font-size:14px;
+line-height:1.6;
+}
+
+.project-card a{
+display:inline-block;
+margin-top:10px;
 text-decoration:none;
-color:#6c63ff;
-font-weight:bold;
+background:#6c63ff;
+color:white;
+padding:8px 14px;
+border-radius:6px;
+font-size:14px;
+}
+
+.project-card a:hover{
+background:#574fd6;
+}
+
+.skills p{
+font-size:16px;
+}
+
+.contact{
+margin-bottom:80px;
 }
